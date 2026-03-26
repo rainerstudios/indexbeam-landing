@@ -4,6 +4,7 @@ import { lazy } from 'react'
 const Landing = lazy(() => import('@/app/landing/page'))
 const Privacy = lazy(() => import('@/app/privacy/page'))
 const Terms = lazy(() => import('@/app/terms/page'))
+const Screencast = lazy(() => import('@/app/screencast/page'))
 
 // Error pages
 const NotFound = lazy(() => import('@/app/errors/not-found/page'))
@@ -37,6 +38,12 @@ export const routes: RouteConfig[] = [
   {
     path: "/terms",
     element: <Terms />
+  },
+
+  // Screencast / Demo
+  {
+    path: "/screencast",
+    element: <Screencast />
   },
 
   // Catch-all route for 404
