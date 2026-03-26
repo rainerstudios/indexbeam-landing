@@ -3,67 +3,71 @@
 import { Check } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group'
-import { useState } from 'react'
 
 const plans = [
   {
     name: 'Free',
-    description: 'Perfect for getting started with essential components',
-    monthlyPrice: 0,
-    yearlyPrice: 0,
+    description: 'Get started with basic indexing for small stores',
+    price: 0,
     features: [
-      'Access to 50+ free components',
-      'Basic dashboard templates',
-      'Community support',
-      'GitHub repository access',
-      'Documentation and guides'
+      '50 URLs/month',
+      'IndexNow submission',
+      'Basic dashboard',
+      'Manual URL submission',
     ],
-    cta: 'Get Started',
-    popular: false
+    cta: 'Install Free',
+    popular: false,
   },
   {
-    name: 'Pro',
-    description: 'For developers who need premium templates and components',
-    monthlyPrice: 19,
-    yearlyPrice: 15,
+    name: 'Starter',
+    description: 'For growing stores that need automated indexing and AI insights',
+    price: 19,
     features: [
-      'Premium template collection',
-      'Advanced dashboard layouts',
-      'Priority support',
-      'Commercial use license',
-      'Early access to new releases',
-      'Figma design files',
-      'Custom component requests',
-      'Direct developer access',
-      'Exclusive design resources'
+      '500 URLs/month',
+      'AI visibility monitoring',
+      'Auto-indexing on publish',
+      'Weekly email digest',
+      'Index status tracking',
     ],
     cta: 'Get Started',
     popular: true,
-    includesPrevious: 'All Free features, plus'
+    includesPrevious: 'All Free features, plus',
   },
   {
-    name: 'Lifetime',
-    description: 'One-time payment for lifetime access to everything',
-    monthlyPrice: 299,
-    yearlyPrice: 299,
+    name: 'Growth',
+    description: 'Advanced analytics and integrations for scaling brands',
+    price: 49,
     features: [
-      'Lifetime updates and support',
-      'Private Discord channel',
-      'No recurring fees ever',
-      'Future template access',
-      'VIP support priority',
-      'Exclusive beta features'
+      '2,000 URLs/month',
+      'Priority support',
+      'Advanced analytics',
+      'Bing Webmaster integration',
+      'AI traffic analytics',
+      'Bulk URL submission',
     ],
     cta: 'Get Started',
     popular: false,
-    includesPrevious: 'All Pro features, plus'
-  }
+    includesPrevious: 'All Starter features, plus',
+  },
+  {
+    name: 'Enterprise',
+    description: 'Unlimited indexing with dedicated support for large catalogs',
+    price: 99,
+    features: [
+      'Unlimited URLs',
+      'Dedicated support',
+      'Custom integrations',
+      'API access',
+      'Priority indexing queue',
+      'Custom reporting',
+    ],
+    cta: 'Get Started',
+    popular: false,
+    includesPrevious: 'All Growth features, plus',
+  },
 ]
 
 export function PricingSection() {
-  const [isYearly, setIsYearly] = useState(false)
-
   return (
     <section id="pricing" className="py-24 sm:py-32 bg-muted/40">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,44 +75,17 @@ export function PricingSection() {
         <div className="mx-auto max-w-2xl text-center mb-12">
           <Badge variant="outline" className="mb-4">Pricing Plans</Badge>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
-            Choose your plan
+            Simple, transparent pricing
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Start building with our free components or upgrade to Pro for access to premium templates and advanced features.
-          </p>
-
-          {/* Billing Toggle */}
-          <div className="flex items-center justify-center mb-2">
-            <ToggleGroup
-              type="single"
-              value={isYearly ? "yearly" : "monthly"}
-              onValueChange={(value) => setIsYearly(value === "yearly")}
-              className="bg-secondary text-secondary-foreground border-none rounded-full p-1 cursor-pointer shadow-none"
-            >
-              <ToggleGroupItem
-                value="monthly"
-                className="data-[state=on]:bg-background data-[state=on]:border-border border-transparent border px-6 !rounded-full data-[state=on]:text-foreground hover:bg-transparent cursor-pointer transition-colors"
-              >
-                Monthly
-              </ToggleGroupItem>
-              <ToggleGroupItem
-                value="yearly"
-                className="data-[state=on]:bg-background data-[state=on]:border-border border-transparent border px-6 !rounded-full data-[state=on]:text-foreground hover:bg-transparent cursor-pointer transition-colors"
-              >
-                Annually
-              </ToggleGroupItem>
-            </ToggleGroup>
-          </div>
-
-          <p className="text-sm text-muted-foreground">
-            <span className="text-primary font-semibold">Save 20%</span> On Annual Billing
+            Start free and scale as your store grows. All plans include IndexNow protocol support and are billed through the Shopify App Store.
           </p>
         </div>
 
         {/* Pricing Cards */}
         <div className="mx-auto max-w-6xl">
           <div className="rounded-xl border">
-            <div className="grid lg:grid-cols-3">
+            <div className="grid lg:grid-cols-4">
               {plans.map((plan, index) => (
                 <div
                   key={index}
@@ -127,16 +104,10 @@ export function PricingSection() {
                   {/* Pricing */}
                   <div>
                     <div className="text-4xl font-bold mb-1">
-                      {plan.name === 'Lifetime' ? (
-                        `$${plan.monthlyPrice}`
-                      ) : plan.name === 'Free' ? (
-                        '$0'
-                      ) : (
-                        `$${isYearly ? plan.yearlyPrice : plan.monthlyPrice}`
-                      )}
+                      {plan.price === 0 ? '$0' : `$${plan.price}`}
                     </div>
                     <div className="text-muted-foreground text-sm">
-                      {plan.name === 'Lifetime' ? 'One-time payment' : 'Per month'}
+                      {plan.price === 0 ? 'Free forever' : 'Per month'}
                     </div>
                   </div>
 
@@ -149,8 +120,11 @@ export function PricingSection() {
                           : 'shadow-sm shadow-black/15 border border-transparent bg-background ring-1 ring-foreground/10 hover:bg-muted/50'
                       }`}
                       variant={plan.popular ? 'default' : 'secondary'}
+                      asChild
                     >
-                      {plan.cta}
+                      <a href="https://apps.shopify.com/indexbeam">
+                        {plan.cta}
+                      </a>
                     </Button>
                   </div>
 
@@ -176,13 +150,13 @@ export function PricingSection() {
           </div>
         </div>
 
-        {/* Enterprise Note */}
+        {/* Contact Note */}
         <div className="mt-16 text-center">
           <p className="text-muted-foreground">
-            Need custom components or have questions? {' '}
+            Need a custom plan or have questions? {' '}
             <Button variant="link" className="p-0 h-auto cursor-pointer" asChild>
               <a href="#contact">
-                Contact our team
+                Contact us
               </a>
             </Button>
           </p>

@@ -1,10 +1,10 @@
 "use client"
 
 import {
-  Package,
-  Download,
-  Users,
-  Star
+  Zap,
+  Timer,
+  Shield,
+  Users
 } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 import { DotPattern } from '@/components/dot-pattern'
@@ -12,28 +12,28 @@ import { DotPattern } from '@/components/dot-pattern'
 
 const stats = [
   {
-    icon: Package,
-    value: '500+',
-    label: 'Components',
-    description: 'Ready-to-use blocks'
+    icon: Zap,
+    value: '10,000+',
+    label: 'URLs Indexed',
+    description: 'Submitted via IndexNow'
   },
   {
-    icon: Download,
-    value: '25K+',
-    label: 'Downloads',
-    description: 'Trusted worldwide'
+    icon: Timer,
+    value: '5 min',
+    label: 'Average Index Time',
+    description: 'Minutes, not weeks'
+  },
+  {
+    icon: Shield,
+    value: '99.9%',
+    label: 'Uptime',
+    description: 'Reliable service'
   },
   {
     icon: Users,
-    value: '10K+',
-    label: 'Developers',
-    description: 'Active community'
-  },
-  {
-    icon: Star,
-    value: '4.9',
-    label: 'Rating',
-    description: 'User satisfaction'
+    value: '500+',
+    label: 'Happy Merchants',
+    description: 'Shopify stores'
   }
 ]
 

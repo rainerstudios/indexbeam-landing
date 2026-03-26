@@ -16,7 +16,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form"
-import { Mail, MessageCircle, Github, BookOpen } from 'lucide-react'
+import { Mail, MessageCircle, BookOpen } from 'lucide-react'
 
 const contactFormSchema = z.object({
   firstName: z.string().min(2, {
@@ -51,7 +51,6 @@ export function ContactSection() {
   function onSubmit(values: z.infer<typeof contactFormSchema>) {
     // Here you would typically send the form data to your backend
     console.log(values)
-    // You could also show a success message or redirect
     form.reset()
   }
 
@@ -64,7 +63,7 @@ export function ContactSection() {
             Need help or have questions?
           </h2>
           <p className="text-lg text-muted-foreground">
-            Our team is here to help you get the most out of ShadcnStore. Choose the best way to reach out to us.
+            Our team is here to help you get the most out of IndexBeam. Reach out at support@indexbeam.app or use the form below.
           </p>
         </div>
 
@@ -74,17 +73,17 @@ export function ContactSection() {
             <Card className="hover:shadow-md transition-shadow cursor-pointer">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <MessageCircle className="h-5 w-5 text-primary" />
-                  Discord Community
+                  <Mail className="h-5 w-5 text-primary" />
+                  Email Support
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-3">
-                  Join our active community for quick help and discussions with other developers.
+                  Send us an email and we'll get back to you within 24 hours.
                 </p>
                 <Button variant="outline" size="sm" className="cursor-pointer" asChild>
-                  <a href="https://discord.com/invite/XEQhPc9a6p" target="_blank" rel="noopener noreferrer">
-                    Join Discord
+                  <a href="mailto:support@indexbeam.app">
+                    support@indexbeam.app
                   </a>
                 </Button>
               </CardContent>
@@ -93,17 +92,17 @@ export function ContactSection() {
             <Card className="hover:shadow-md transition-shadow cursor-pointer">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Github className="h-5 w-5 text-primary" />
-                  GitHub Issues
+                  <MessageCircle className="h-5 w-5 text-primary" />
+                  Shopify App Store
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-3">
-                  Report bugs, request features, or contribute to our open source repository.
+                  Install IndexBeam and manage your subscription through the Shopify App Store.
                 </p>
                 <Button variant="outline" size="sm" className="cursor-pointer" asChild>
-                  <a href="https://github.com/silicondeck/shadcn-dashboard-landing-template/issues" target="_blank" rel="noopener noreferrer">
-                    View on GitHub
+                  <a href="https://apps.shopify.com/indexbeam" target="_blank" rel="noopener noreferrer">
+                    View on App Store
                   </a>
                 </Button>
               </CardContent>
@@ -113,16 +112,16 @@ export function ContactSection() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <BookOpen className="h-5 w-5 text-primary" />
-                  Documentation
+                  Knowledge Base
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-3">
-                  Browse our comprehensive guides, tutorials, and component documentation.
+                  Browse our FAQ section for quick answers to common questions.
                 </p>
                 <Button variant="outline" size="sm" className="cursor-pointer" asChild>
-                  <a href="#">
-                    View Docs
+                  <a href="#faq">
+                    View FAQ
                   </a>
                 </Button>
               </CardContent>
@@ -189,7 +188,7 @@ export function ContactSection() {
                         <FormItem>
                           <FormLabel>Subject</FormLabel>
                           <FormControl>
-                            <Input placeholder="Component request, bug report, general inquiry..." {...field} />
+                            <Input placeholder="Indexing question, feature request, billing inquiry..." {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -203,7 +202,7 @@ export function ContactSection() {
                           <FormLabel>Message</FormLabel>
                           <FormControl>
                             <Textarea
-                              placeholder="Tell us how we can help you with ShadcnStore components..."
+                              placeholder="Tell us how we can help you with IndexBeam..."
                               rows={10}
                               className="min-h-50"
                               {...field}

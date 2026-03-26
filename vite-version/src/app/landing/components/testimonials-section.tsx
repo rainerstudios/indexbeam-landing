@@ -13,83 +13,83 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
-    name: 'Alexandra Mitchell',
-    role: 'Senior Frontend Developer',
+    name: 'Sarah Mitchell',
+    role: 'Shopify Store Owner',
     image: 'https://notion-avatars.netlify.app/api/avatar?preset=female-1',
     quote:
-      'This platform has completely transformed our development workflow. The component system is so well-architected that even complex applications feel simple to build.',
+      'Before IndexBeam, our new products took weeks to show up in Google. Now they appear within hours. It has been a game-changer for our seasonal launches.',
   },
   {
-    name: 'James Thompson',
-    role: 'Technical Lead',
+    name: 'James Rodriguez',
+    role: 'E-commerce Manager',
     image: 'https://notion-avatars.netlify.app/api/avatar?preset=male-1',
-    quote: 'After trying countless frameworks, this is the one that finally clicked. The documentation is exceptional.',
+    quote: 'The auto-indexing feature is incredible. Every time we update a product, IndexBeam handles everything automatically. Zero manual work.',
   },
   {
-    name: 'Priya Sharma',
-    role: 'Product Designer',
+    name: 'Emily Chen',
+    role: 'DTC Brand Founder',
     image: 'https://notion-avatars.netlify.app/api/avatar?preset=female-2',
     quote:
-      'The design system is beautiful and consistent. I can prototype ideas quickly and hand them off to developers with confidence that the implementation will match perfectly.',
+      'The AI visibility monitoring opened our eyes. We had no idea how often AI chatbots were recommending our competitors instead of us. Now we can track and improve that.',
   },
   {
-    name: 'Robert Kim',
-    role: 'Engineering Manager',
+    name: 'David Park',
+    role: 'Shopify Plus Merchant',
     image: 'https://notion-avatars.netlify.app/api/avatar?preset=male-2',
     quote:
-      'We migrated our entire application to this platform in just two weeks. The performance improvements were immediate.',
+      'With over 5,000 products in our catalog, bulk submission is a lifesaver. We reindexed our entire site in under an hour.',
   },
   {
     name: 'Maria Santos',
-    role: 'Full Stack Engineer',
+    role: 'Marketing Director',
     image: 'https://notion-avatars.netlify.app/api/avatar?preset=female-3',
     quote:
-      'The accessibility features are top-notch. Building inclusive applications has never been easier. Every component follows best practices out of the box, and the automated testing suite ensures we maintain high accessibility standards throughout our development process.',
-  },
-  {
-    name: 'Thomas Anderson',
-    role: 'Solutions Architect',
-    image: 'https://notion-avatars.netlify.app/api/avatar?preset=male-3',
-    quote: 'Scalability was our biggest concern, but this platform handles enterprise-level complexity with ease.',
-  },
-  {
-    name: 'Lisa Chang',
-    role: 'UX Researcher',
-    image: 'https://notion-avatars.netlify.app/api/avatar?preset=female-4',
-    quote:
-      'User testing results have been consistently positive since we adopted this platform. The user experience is intuitive and the performance is stellar. Our user satisfaction scores have increased by 40% since the migration.',
+      'IndexBeam pays for itself. Faster indexing means our new collections start generating organic traffic from day one instead of waiting weeks. The ROI is clear and the dashboard makes it easy to see results at a glance.',
   },
   {
     name: 'Michael Foster',
-    role: 'DevOps Engineer',
+    role: 'Store Owner - Fashion',
+    image: 'https://notion-avatars.netlify.app/api/avatar?preset=male-3',
+    quote: 'Simple to set up, works like magic. Installed it, connected my store, and forgot about indexing problems forever.',
+  },
+  {
+    name: 'Lisa Chang',
+    role: 'SEO Consultant',
+    image: 'https://notion-avatars.netlify.app/api/avatar?preset=female-4',
+    quote:
+      'I recommend IndexBeam to all my Shopify clients. The IndexNow integration is properly implemented and the Bing Webmaster connection gives real visibility into index status. It fills a gap that no other Shopify app addresses this well.',
+  },
+  {
+    name: 'Thomas Anderson',
+    role: 'Shopify Developer',
     image: 'https://notion-avatars.netlify.app/api/avatar?preset=male-4',
-    quote: 'Deployment and maintenance are a breeze. The platform integrates seamlessly with our CI/CD pipeline.',
+    quote: 'Clean implementation of the IndexNow protocol. The webhook integration is solid and the dashboard gives clear, actionable data.',
   },
   {
     name: 'Sophie Laurent',
-    role: 'Creative Director',
+    role: 'E-commerce Entrepreneur',
     image: 'https://notion-avatars.netlify.app/api/avatar?preset=female-5',
     quote:
-      'The creative possibilities are endless. We can bring any design concept to life without compromising on technical quality or user experience.',
+      'The free tier was perfect to test the waters. After seeing my indexing times drop dramatically, upgrading to Starter was a no-brainer.',
   },
   {
-    name: 'Daniel Wilson',
-    role: 'Backend Developer',
+    name: 'Robert Kim',
+    role: 'Digital Marketing Lead',
     image: 'https://notion-avatars.netlify.app/api/avatar?preset=male-5',
-    quote: 'The API design is exceptional. Clean, intuitive, and well-documented.',
+    quote: 'The AI traffic analytics feature is ahead of its time. Understanding how AI referrals impact our traffic is invaluable.',
   },
   {
     name: 'Natasha Petrov',
-    role: 'Mobile App Developer',
+    role: 'Shopify Store Manager',
     image: 'https://notion-avatars.netlify.app/api/avatar?preset=female-6',
     quote:
-      'Cross-platform development has never been this efficient. One codebase, multiple platforms, consistent user experience. This is the future. The responsive design system ensures our apps look perfect on every device.',
+      'We run flash sales every week and timing is everything. IndexBeam ensures our sale pages are indexed before we even start promoting them on social media.',
   },
   {
     name: 'Carlos Rivera',
-    role: 'Startup Founder',
+    role: 'Dropshipping Entrepreneur',
     image: 'https://notion-avatars.netlify.app/api/avatar?preset=male-6',
-    quote: 'As a non-technical founder, this platform gave me the confidence to build our MVP quickly.',
+    quote: 'As someone who adds 50+ products weekly, IndexBeam keeps everything indexed without me lifting a finger.',
   },
 ]
 
@@ -101,10 +101,10 @@ export function TestimonialsSection() {
         <div className="mx-auto max-w-2xl text-center mb-16">
           <Badge variant="outline" className="mb-4">Testimonials</Badge>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
-            Empowering Innovation Worldwide
+            Trusted by Shopify Merchants Worldwide
           </h2>
           <p className="text-lg text-muted-foreground">
-            Join thousands of developers and teams who trust our platform to build exceptional digital experiences.
+            See how IndexBeam helps store owners get their products indexed faster and boost their search visibility.
           </p>
         </div>
 
@@ -131,9 +131,7 @@ export function TestimonialsSection() {
                   </Avatar>
 
                   <div className="min-w-0 flex-1">
-                    <a href="#" onClick={e => e.preventDefault()} className="cursor-pointer">
-                      <h3 className="font-medium hover:text-primary transition-colors">{testimonial.name}</h3>
-                    </a>
+                    <h3 className="font-medium">{testimonial.name}</h3>
                     <span className="text-muted-foreground block text-sm tracking-wide">
                       {testimonial.role}
                     </span>

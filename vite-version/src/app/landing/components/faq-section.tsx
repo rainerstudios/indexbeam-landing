@@ -14,39 +14,39 @@ type FaqItem = {
 const faqItems: FaqItem[] = [
   {
     value: 'item-1',
-    question: 'How do I integrate ShadcnStore components into my project?',
+    question: 'What is IndexNow?',
     answer:
-      'Integration is simple! All our components are built with shadcn/ui and work with React, Next.js, and Vite. Just copy the component code, install any required dependencies, and paste it into your project. Each component comes with detailed installation instructions and examples.',
+      'IndexNow is an open protocol that allows website owners to instantly notify search engines like Google, Bing, and Yandex about new or updated content. Instead of waiting for search engine crawlers to discover your changes, IndexNow pushes the information directly, resulting in much faster indexing.',
   },
   {
     value: 'item-2',
-    question: 'What\'s the difference between free and premium components?',
+    question: 'How fast will my pages get indexed?',
     answer:
-      'Free components include essential UI elements like buttons, forms, and basic layouts. Premium components offer advanced features like complex data tables, analytics dashboards, authentication flows, and complete admin templates. Premium also includes Figma files, priority support, and commercial licenses.',
+      'With IndexNow, your pages are typically indexed within minutes to hours, compared to the days or even weeks it can take with traditional crawling. The exact timing depends on the search engine, but most merchants see their new product pages appearing in search results significantly faster.',
   },
   {
     value: 'item-3',
-    question: 'Can I use these components in commercial projects?',
+    question: 'Does this work with Google?',
     answer:
-      'Yes! Free components come with an MIT license for unlimited use. Premium components include a commercial license that allows usage in client projects, SaaS applications, and commercial products without attribution requirements.',
+      'Yes! IndexNow works with Google, Bing, Yandex, and other participating search engines. When you submit a URL through IndexBeam, it is sent to all supported search engines simultaneously, maximizing your visibility across the web.',
   },
   {
     value: 'item-4',
-    question: 'Do you provide support and updates?',
+    question: 'What is AI Visibility monitoring?',
     answer:
-      'Absolutely! We provide community support for free components through our Discord server and GitHub issues. Premium subscribers get priority email support, regular component updates, and early access to new releases. We also maintain compatibility with the latest shadcn/ui versions.',
+      'AI Visibility monitoring checks whether AI chatbots like ChatGPT, Perplexity, and other AI-powered search tools mention your brand or products when users ask related questions. This helps you understand how visible your brand is in the growing AI search landscape.',
   },
   {
     value: 'item-5',
-    question: 'What frameworks and tools do you support?',
+    question: 'Do I need technical knowledge to use IndexBeam?',
     answer:
-      'Our components work with React 18+, Next.js 13+, and Vite. We use TypeScript, Tailwind CSS, and follow shadcn/ui conventions. Components are tested with popular tools like React Hook Form, TanStack Query, and Zustand for state management.',
+      'Not at all! Simply install the app from the Shopify App Store and it works automatically. IndexBeam sets up webhooks to detect when you create or update products, and submits URLs to search engines on your behalf. No coding or technical configuration required.',
   },
   {
     value: 'item-6',
-    question: 'How often do you release new components?',
+    question: 'Can I cancel anytime?',
     answer:
-      'We release new components and templates weekly. Premium subscribers get early access to new releases, while free components are updated regularly based on community feedback. You can track our roadmap and request specific components through our GitHub repository.',
+      'Yes, absolutely. All plans are month-to-month with no long-term contracts. You can upgrade, downgrade, or cancel your subscription at any time directly through the Shopify App Store. If you cancel, you will retain access until the end of your current billing period.',
   },
 ]
 
@@ -61,7 +61,7 @@ const FaqSection = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-muted-foreground">
-            Everything you need to know about ShadcnStore components, licensing, and integration. Still have questions? We're here to help!
+            Everything you need to know about IndexBeam, IndexNow, and getting your Shopify store indexed faster.
           </p>
         </div>
 
