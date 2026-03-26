@@ -53,7 +53,7 @@ export function LandingNavbar() {
           <a href="https://indexbeam.app" className="flex items-center space-x-2 cursor-pointer">
             <Logo size={32} />
             <span className="font-bold">
-              IndexBeam
+              <span className="text-[#4ade80]">Index</span>Beam
             </span>
           </a>
         </div>
@@ -108,7 +108,7 @@ export function LandingNavbar() {
                   <div className="p-2 bg-primary/10 rounded-lg">
                     <Logo size={16} />
                   </div>
-                  <SheetTitle className="text-lg font-semibold">IndexBeam</SheetTitle>
+                  <SheetTitle className="text-lg font-semibold"><span className="text-[#4ade80]">Index</span>Beam</SheetTitle>
                   <div className="ml-auto flex items-center gap-2">
                     <Button
                       variant="ghost"

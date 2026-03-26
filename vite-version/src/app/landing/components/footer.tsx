@@ -34,7 +34,7 @@ export function LandingFooter() {
             <div className="flex items-center space-x-2 mb-4 max-lg:justify-center">
               <a href="https://indexbeam.app" className="flex items-center space-x-2 cursor-pointer">
                 <Logo size={32} />
-                <span className="font-bold text-xl">IndexBeam</span>
+                <span className="font-bold text-xl"><span className="text-[#4ade80]">Index</span>Beam</span>
               </a>
             </div>
             <p className="text-muted-foreground mb-6 max-lg:text-center max-lg:flex max-lg:justify-center">
