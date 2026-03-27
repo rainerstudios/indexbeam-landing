@@ -38,7 +38,7 @@ export function LandingFooter() {
               </a>
             </div>
             <p className="text-muted-foreground mb-6 max-lg:text-center max-lg:flex max-lg:justify-center">
-              Instant Google & Bing indexing for Shopify stores. Get your products found faster with the IndexNow protocol and AI visibility monitoring.
+              Instant search engine indexing for Shopify stores. Get your products found faster with the IndexNow protocol and AI visibility monitoring.
             </p>
             <div className="flex space-x-4 max-lg:justify-center">
               {socialLinks.map((social) => (

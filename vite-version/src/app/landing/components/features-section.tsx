@@ -14,7 +14,7 @@ const features = [
   {
     icon: Zap,
     title: 'Instant IndexNow Submission',
-    description: 'Submit URLs to Google & Bing with one click using the IndexNow protocol. Get your pages discovered in minutes, not weeks.'
+    description: 'Submit URLs to Bing, Yandex, and other search engines with one click using the IndexNow protocol. Get your pages discovered in minutes, not weeks.'
   },
   {
     icon: RefreshCw,

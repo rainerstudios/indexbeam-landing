@@ -39,7 +39,7 @@ const plans = [
     price: 29,
     features: [
       '10,000 URLs/month',
-      'Google + Bing index tracking',
+      'Bing + Yandex index tracking',
       'AI citation tracking',
       'Bing Webmaster integration',
       'AI traffic analytics',

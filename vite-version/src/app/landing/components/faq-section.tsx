@@ -16,7 +16,7 @@ const faqItems: FaqItem[] = [
     value: 'item-1',
     question: 'What is IndexNow?',
     answer:
-      'IndexNow is an open protocol that allows website owners to instantly notify search engines like Google, Bing, and Yandex about new or updated content. Instead of waiting for search engine crawlers to discover your changes, IndexNow pushes the information directly, resulting in much faster indexing.',
+      'IndexNow is an open protocol that allows website owners to instantly notify search engines like Bing, Yandex, and others about new or updated content. Instead of waiting for search engine crawlers to discover your changes, IndexNow pushes the information directly, resulting in much faster indexing.',
   },
   {
     value: 'item-2',
@@ -26,9 +26,9 @@ const faqItems: FaqItem[] = [
   },
   {
     value: 'item-3',
-    question: 'Does this work with Google?',
+    question: 'Which search engines does IndexNow support?',
     answer:
-      'Yes! IndexNow works with Google, Bing, Yandex, and other participating search engines. When you submit a URL through IndexBeam, it is sent to all supported search engines simultaneously, maximizing your visibility across the web.',
+      'IndexNow currently works with Bing, Yandex, Naver, Seznam, and other participating search engines. Google does not yet support IndexNow, but faster Bing indexing often helps Google discover your pages sooner too since search engines share crawl signals.',
   },
   {
     value: 'item-4',

@@ -19,7 +19,7 @@ export function HeroSection() {
           <div className="mb-8 flex justify-center">
             <Badge variant="outline" className="px-4 py-2 border-foreground">
               <Star className="w-3 h-3 mr-2 fill-current" />
-              New: Instant Google & Bing Indexing for Shopify
+              New: Instant Search Engine Indexing for Shopify
               <ArrowRight className="w-3 h-3 ml-2" />
             </Badge>
           </div>
@@ -35,7 +35,7 @@ export function HeroSection() {
 
           {/* Subheading */}
           <p className="mx-auto mb-10 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-            IndexBeam uses the IndexNow protocol to instantly notify Google and Bing when you publish or update products. Plus, monitor your AI search visibility across ChatGPT, Perplexity, and more.
+            IndexBeam uses the IndexNow protocol to instantly notify Bing, Yandex, and other search engines when you publish or update products. Plus, monitor your AI search visibility across ChatGPT, Perplexity, and more.
           </p>
 
           {/* CTA Buttons */}

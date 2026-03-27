@@ -47,7 +47,7 @@ export function CTASection() {
                 </h1>
 
                 <p className='text-muted-foreground mx-auto max-w-2xl text-balance lg:text-xl'>
-                  Join thousands of Shopify merchants who use IndexBeam to get their products found faster across Google, Bing, and AI search platforms.
+                  Join Shopify merchants who use IndexBeam to get their products found faster across Bing, Yandex, and AI search platforms.
                 </p>
               </div>
 
