@@ -37,24 +37,13 @@ export default function ScreencastPage() {
 
           {/* Video Embed */}
           <div className="relative w-full aspect-video rounded-xl overflow-hidden border bg-muted">
-            {/* Replace the src below with your actual video URL */}
-            {/* For YouTube: https://www.youtube.com/embed/VIDEO_ID */}
-            {/* For Loom: https://www.loom.com/embed/VIDEO_ID */}
             <iframe
-              src=""
+              src="https://www.youtube.com/embed/9q3sfCm4COs"
               title="IndexBeam Demo"
               className="absolute inset-0 w-full h-full"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
-            {/* Placeholder shown when no video URL is set */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-muted-foreground">
-              <svg className="w-16 h-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
-              </svg>
-              <p className="text-lg font-medium">Demo video coming soon</p>
-            </div>
           </div>
 
           {/* CTA below video */}
